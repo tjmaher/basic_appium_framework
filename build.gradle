@@ -1,0 +1,50 @@
+group 'com.tmaher.appium'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+buildscript {
+    ext {
+        appiumVersion = '2.1.0'
+        slf4jVersion = '6.11'
+        testNGVersion = '4.12'
+        assertjVersion = '1.7.0'
+        hamcrestVersion = '2.0.0.0'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+}
+
+dependencies {
+    compile "io.appium:java-client:${appiumVersion}"
+    compile "org.slf4j:slf4j-simple:${slf4jVersion}"
+
+    testCompile "org.assertj:assertj-core:${assertjVersion}"
+    testCompile "org.hamcrest:java-hamcrest:${hamcrestVersion}"
+    compile group: 'org.testng', name: 'testng', version: '6.11'
+
+}
+
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+    systemProperties(System.getProperties())
+    maxParallelForks = 8
+    ignoreFailures true
+}
+
+// continue build to generate reports
+gradle.startParameter.continueOnFailure = true
