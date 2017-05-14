@@ -5,6 +5,23 @@ Pre-requisite
 * Appium must be running on your local computer, such as with Appium Desktop
 * An emulator must be connected via adb, the Android Debug Bridge, called _emulator-5554_ 
 
+<pre>
+src 
+-> test
+   -> java
+      --> pages
+         HomeScreenPage.java
+	 InnerApiDemosPage.java
+	 LogTextBoxPage.java
+      --> utils
+         TestUtils.java
+	 
+	SmokeTest.java 
+ApiDemos-debug.apk
+build.gradle
+</pre>
+
+
 
 <pre>
 HOME_SCREEN_PAGE: Verifying Header appears.
