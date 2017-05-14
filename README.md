@@ -5,6 +5,11 @@
 ## App Under Test
 * We are using the **ApiDemos-debug.apk** sample app included on Appium's GitHub repository. 
 
+## ApiDemos-debug Home Page
+![alt text](http://appium.io/slate/images/uiautomatorviewer.png "ApiDemos-debug.apk")
+
+
+
 ## The Test Outline
 * Fire up the app, waiting for the header to appear on the HomeScreen page.
 * Select the “Text” button. Wait for the header on the InnerApiDemos page to appear.
@@ -54,3 +59,9 @@ Verifying Expected Value Matches Actual Value:
 
 Tearing Down Driver.
 </pre>
+
+## Future plans
+Other Appium frameworks, modeled on this code, will include:
+* iPads, iPhones, both physical devices and emulators
+* Multiple mobile devices running tests simulatneously and in parrallel
+* Better logs
