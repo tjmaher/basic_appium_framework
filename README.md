@@ -40,7 +40,7 @@ ApiDemos-debug.apk
 build.gradle
 </pre>
 
-## The Test, Itself
+## The Smoketest
 <pre>
     @Test
     public void test_login() throws Exception {
