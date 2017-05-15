@@ -40,6 +40,30 @@ ApiDemos-debug.apk
 build.gradle
 </pre>
 
+## The Test, Itself
+<pre>
+    @Test
+    public void test_login() throws Exception {
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+        homeScreen.verifyHeader();
+        homeScreen.selectTextButton();
+
+        innerApiDemoScreen.verifyHeader();
+        innerApiDemoScreen.selectLogTextBoxButton();
+
+        logTextBoxPage.verifyHeader();
+        logTextBoxPage.selectAddButton();
+
+        String expectedPanelText = "This is a test";
+        String actualPanelText = logTextBoxPage.getPanelText();
+
+        System.out.println("Checking panel text...");
+
+        TestUtils.outputIfMatchPassOrFail(expectedPanelText, actualPanelText);
+        assertThat(actualPanelText,containsString(expectedPanelText));
+    }
+</pre>
 
 ## Output Rendered After Running Automated Test
 <pre>
