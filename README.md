@@ -86,6 +86,16 @@ Verifying Expected Value Matches Actual Value:
 Tearing Down Driver.
 </pre>
 
+## Setup and Code Walkthrough on Building a Basic Appium Framework
+* Part One: [Review How to Inspect Mobile Apps with Appium Desktop](http://www.tjmaher.com/2017/05/basic-appium-framework-part-one.html)
+* Part Two:  [Design a Basic Test, Examining Mobile Elements with Appium Desktop](http://www.tjmaher.com/2017/05/basic-appium-framework-part-two.html)
+* Part Three:  [Install and Launch an App Using Desired Capabilities]
+* Part Four:  [Set up the Page Objects, Page Factories and Tests]
+* Part Five:  [Download the tests and run them on your own MacBook]!
+* GitHub: [Review the source code for the project](https://github.com/tjmaher/basic_appium_framework). 
+
+
+
 ## Future plans
 Other Appium frameworks, modeled on this code, will include:
 * Appium will be started and stopped programatically.
@@ -93,4 +103,3 @@ Other Appium frameworks, modeled on this code, will include:
 * iPads, iPhones, both physical devices and emulators
 * Multiple mobile devices running tests simulatneously and in parrallel
 * Better logs
-* A step-by-step code walkthrough will be posted on tjmaher.com.
