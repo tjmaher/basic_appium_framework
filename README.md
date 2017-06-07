@@ -89,9 +89,9 @@ Tearing Down Driver.
 ## Setup and Code Walkthrough on Building a Basic Appium Framework
 * Part One: [Review How to Inspect Mobile Apps with Appium Desktop](http://www.tjmaher.com/2017/05/basic-appium-framework-part-one.html)
 * Part Two:  [Design a Basic Test, Examining Mobile Elements with Appium Desktop](http://www.tjmaher.com/2017/05/basic-appium-framework-part-two.html)
-* Part Three:  [Install and Launch an App Using Desired Capabilities]
-* Part Four:  [Set up the Page Objects, Page Factories and Tests]
-* Part Five:  [Download the tests and run them on your own MacBook]!
+* Part Three:  [Install and Launch an App Using Desired Capabilities](http://www.tjmaher.com/2017/05/build-basic-appium-framework-install.html)
+* Part Four:  [Set up the Page Objects, Page Factories and Tests](http://www.tjmaher.com/2017/05/basic-appium-framework-part-four.html)
+* Part Five:  [Download the tests and run them on your own MacBook!](http://www.tjmaher.com/2017/05/basic-appium-framework-part-five.html)
 * GitHub: [Review the source code for the project](https://github.com/tjmaher/basic_appium_framework). 
 
 
